@@ -17,13 +17,14 @@ class CulqiCheckout extends Component {
 
   getCulqiSettings = () => {
     const { amount } = this.state;
-    const { currency = 'PEN', description = '', title = '' } = this.props;
+    const { currency = 'PEN', description = '', title = '', order = '' } = this.props;
 
     return {
       amount,
       currency,
       description,
       title,
+      order,
     };
   };
 
